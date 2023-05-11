@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculatrice</title>
+</head>
+<body>
+<h1>Calculatrice</h1>
+<form>
+    <input type="number" id="num1" name="num1" required>
+    <label for="btn-plus">+</label>
+    <input type="radio" id="btn-plus" name="operator" value="add" required>
+    <label for="btn-minus">-</label>
+    <input type="radio" id="btn-minus" name="operator" value="subtract" required>
+    <label for="btn-times">*</label>
+    <input type="radio" id="btn-times" name="operator" value="multiply" required>
+    <label for="btn-divide">/</label>
+    <input type="radio" id="btn-divide" name="operator" value="divide" required>
+    <input type="number" id="num2" name="num2" required>
+    <button type="button" onclick="calculate()">Calculer</button>
+    <p>Résultat : <output id="result"></output></p>
+</form>
+
+<script src="calculator.js"></script>
+</body>
+</html>
