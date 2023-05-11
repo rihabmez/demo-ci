@@ -13,6 +13,10 @@ jobs:
    name: demo-ci avec GITHUB ACITON
    runs-on: windows-latest
    steps :
-   - name : HELLO WORD
-     run: echo "hello word"
+     - name : HELLO WORD
+       run: echo "hello word"
+     - run: ls -a
+     - name: Recupération du code
+       uses: actions/checkout@v3.5.2
+     - run: ls -a
  
