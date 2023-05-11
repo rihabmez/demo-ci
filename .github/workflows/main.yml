@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+    - main
+ # pull_request:
+ #  branches:
+ #  - main
+ #   schedule:
+ # - cron: "0 2 * * 1-5"
+ 
+jobs:
+  demo: 
+   name: demo-ci avec GITHUB ACITON
+   runs-on: windows-latest
+   steps :
+   - name : HELLO WORD
+     run: echo "hello word"
+ 
